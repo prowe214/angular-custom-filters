@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="customFilters">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Custom Filters</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src='js/app.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div>
+      <h1>camelCase filter</h1>
+      <h2>wer_wer => {{'wer_wer' | camel}}</h2>
+      <h2>wer-wer => {{'wer-wer' | camel}}</h2>
+    </div>
+
+    <div>
+      <h1>Pig Latin Filter</h1>
+      <h2>{{'hello paul' | piglatin}}</h2>
+    </div>
+
+    <div>
+      <h1>REDACTED</h1>
+      <h2>{{'Of course those damn grapes are from California' | redact: "damn"}}</h2>
+    </div>
+  </body>
+</html>
